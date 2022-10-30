@@ -291,6 +291,58 @@ body {
   padding-right: 80px;
 }
 
+.parceiros {
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: white;
+  height: 800px;
+}
+
+.parceiros > h2 {
+  margin: 0;
+  padding-bottom: 80px;
+  min-width: 600px;
+  padding-left: 220px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  /* or 112% */
+  text-transform: lowercase;
+}
+
+.parceiros > h2 > span {
+  color: #ffbb00;
+}
+
+.parceiros > .partners {
+  /* padding-top: 80px; */
+  height: 270px;
+  min-width: 870px;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* background-image: url("../img/Linhas.svg"); */
+  justify-items: center;
+  align-items: center;
+  background-color: #d3d3d3;
+}
+
+.parceiros > .partners > .item {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .parceiros > .partners > .item > img {
+} */
+
 /* * {
   border: 1px solid red;
 } */
