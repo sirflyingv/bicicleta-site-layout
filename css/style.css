@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: darkgray;
 }
 
 .header {
@@ -118,6 +117,30 @@ body {
   color: #332200;
 }
 
+.btn--dark {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  /* c11 */
+  background: #121212;
+  border-radius: 5px;
+}
+
+.btn--dark > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  text-transform: uppercase;
+  /* c04 */
+  color: #cccccc;
+}
+
 .introduction--image {
   padding-right: 140px;
 }
@@ -127,7 +150,7 @@ body {
 }
 
 .bicicletas {
-  height: 743px;
+  min-height: 743px;
   padding: 70px;
   background-color: white;
 }
@@ -151,8 +174,10 @@ body {
 
 .bicicletas--showcase {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-top: 48px;
+  gap: 6px;
 }
 
 .bicicletas--showcase > .bike {
@@ -296,7 +321,7 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   background-color: white;
-  height: 800px;
+  height: 500px;
 }
 
 .parceiros > h2 {
@@ -340,8 +365,181 @@ body {
   align-items: center;
 }
 
-/* .parceiros > .partners > .item > img {
-} */
+.depoimento {
+  display: flex;
+  align-content: stretch;
+}
+
+.depoimento > .image {
+  padding-bottom: 0;
+  height: 680px;
+}
+
+.depoimento--info {
+  height: 680px;
+  width: 100%;
+  justify-items: start;
+  min-width: 920px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #ffbb00;
+}
+
+.depoimento--info > .text {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  display: flex;
+  width: 621px;
+}
+
+.depoimento--info > .text > .rq {
+  height: 35px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+.depoimento--info > .text > .lq {
+  /* padding-bottom: 160px; */
+  padding-bottom: 175px;
+  align-self: flex-end;
+  height: 35px;
+}
+
+.depoimento--info > .text > p {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  /* p05 */
+  color: #332200;
+}
+.depoimento--info > .text > p > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  /* p03 */
+  color: #a66f00;
+}
+
+.depoimento--info > .upleft {
+  padding: 40px;
+}
+.depoimento--info > .lowright {
+  padding: 40px;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  align-self: end;
+  justify-self: end;
+  transform: rotate(-180deg);
+}
+
+.seguros--bg {
+  background-color: #121212;
+  padding-bottom: 60px;
+}
+
+.seguros--bg > h2 {
+  padding-top: 30px;
+  margin: 0;
+  padding-left: 220px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  /* or 112% */
+  text-transform: lowercase;
+  /* w */
+  color: #ffffff;
+}
+
+.seguros--bg > h2 > span {
+  color: #ffbb00;
+}
+
+.seguros--info {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+
+.seguros--panel {
+  background-color: black;
+  min-width: 400px;
+  padding: 32px;
+  height: fit-content;
+}
+
+.seguros--panel > .top {
+  display: flex;
+  justify-content: space-between;
+  color: #d3d3d3;
+}
+
+.seguros--panel > .top > .name-1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* c06 */
+  color: #9c9c9c;
+}
+
+.seguros--panel > .top > .name-2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* p01 */
+  color: #ffbb00;
+}
+
+.seguros--panel > .top > .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: right;
+  /* identical to box height, or 133% */
+  /* w */
+  color: #ffffff;
+}
+
+.seguros--panel > .mensal {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: end;
+  /* identical to box height, or 133% */
+  /* c06 */
+  color: #9c9c9c;
+}
+
+.seguros--panel > ul > li {
+  list-style-image: url("../img/li-marker.svg");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
 
 /* * {
   border: 1px solid red;
