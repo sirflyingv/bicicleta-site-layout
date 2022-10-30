@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  background-color: darkgray;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 300px, auto;
+  grid-template-rows: 1fr;
+
+  width: 100%;
+  height: 96px;
+  background-color: black;
+  margin-bottom: 2px;
+}
+
+.logo {
+  padding-left: 230px;
+  grid-column: 1 / span 1;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.navigation {
+  grid-column: 2 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  /* border: 1px solid red; */
+}
+
+.navigation-item {
+  color: white;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+}
+
+.introduction {
+  width: 100%;
+  background-color: white;
+  height: 800px;
+}
+
+.introduction--bg {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 680px;
+  background-color: black;
+}
+
+.dec {
+  align-self: flex-end;
+  padding: 45px;
+  /* background: #2e2e2e;
+    transform: rotate(-90deg); */
+}
+
+.introduction--info {
+  color: white;
+  padding: 40px;
+}
+
+.introduction--info > h2 {
+  margin-left: 25px;
+  max-width: 578px;
+  min-width: 400px;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  color: white;
+}
+
+.introduction--info > h2 > span {
+  color: #ffbb00;
+}
+
+.introduction--info > p {
+  margin-left: 25px;
+  max-width: 553px;
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.btn {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 22px;
+  gap: 10px;
+  /* position: absolute;
+  width: 217px;
+  height: 56px;
+  left: 205px;
+  top: 598px; */
+  /* Gradiente */
+  background: linear-gradient(180deg, #ffbb00 0%, #f2a60c 100%);
+  border-radius: 5px;
+}
+.btn > span {
+  width: 153px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  text-transform: uppercase;
+  color: #332200;
+}
+
+.introduction--image {
+  padding-right: 140px;
+}
+
+.introduction--image > img {
+  height: 800px;
+}
+
+/* * {
+  border: 1px solid red;
+} */

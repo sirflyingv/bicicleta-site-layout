@@ -1,0 +1,13 @@
+{
+  "name": "bicicleta",
+  "version": "1.0.0",
+  "description": "training layout",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  }
+}
