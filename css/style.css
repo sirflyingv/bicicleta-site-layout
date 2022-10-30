@@ -124,6 +124,68 @@ body {
   height: 800px;
 }
 
+.bicicletas {
+  height: 743px;
+  padding: 70px;
+  background-color: white;
+}
+
+.bicicletas > h2 {
+  padding-left: 160px;
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  /* identical to box height, or 112% */
+  text-transform: lowercase;
+  color: #121212;
+}
+
+.bicicletas > h2 > span {
+  color: #ffbb00;
+}
+
+.bicicletas--showcase {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+
+.bicicletas--showcase > .bike {
+  /* border: 1px solid red; */
+  display: block;
+}
+
+.bicicletas--showcase > .bike > .model-name {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicletas--showcase > .bike > .model-name > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  /* c11 */
+  color: #121212;
+}
+
+.bicicletas--showcase > .bike > .price {
+  padding-left: 20px;
+  color: #595959;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* * {
   border: 1px solid red;
 } */
