@@ -63,12 +63,14 @@ body {
 .introduction--info {
   color: white;
   padding: 40px;
+  max-width: 618px;
+  min-width: 440px;
 }
 
 .introduction--info > h2 {
   margin-left: 25px;
-  max-width: 578px;
-  min-width: 400px;
+  /* max-width: 578px;
+  min-width: 400px; */
   font-family: "Poppins", sans-serif;
   font-size: 64px;
   color: white;
@@ -184,6 +186,109 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+}
+
+.diferencial {
+  background-color: white;
+  padding-top: 50px;
+}
+
+.diferencial--bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  height: 960px;
+}
+
+.diferencial--info {
+  padding-left: 45px;
+  padding-right: 45px;
+  max-width: 618px;
+  min-width: 555px;
+  max-height: 960px;
+}
+
+.diferencial--info > h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  /* c05 */
+  color: #b3b3b3;
+}
+
+.diferencial--info > h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  /* or 112% */
+  text-transform: lowercase;
+  /* w */
+  color: #ffffff;
+}
+.diferencial--info > h2 > span {
+  color: #ffbb00;
+}
+
+.diferencial--info > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+  /* c05 */
+  color: #b3b3b3;
+}
+.diferencial--info > .link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  color: #ffbb00;
+}
+
+.caracteristicas {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+}
+
+.diferencial--info > .caracteristicas > .feature > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  color: #ffffff;
+}
+
+.diferencial--info > .caracteristicas > .feature > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  /* c05 */
+  color: #b3b3b3;
+}
+
+.diferencial--image {
+  padding-right: 80px;
 }
 
 /* * {
