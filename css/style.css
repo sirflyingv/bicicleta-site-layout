@@ -1,7 +1,8 @@
 body {
   margin: 0;
   min-width: 820px;
-  background-color: #272727;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
 h2,
@@ -557,6 +558,10 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+  body {
+    overflow-x: visible;
+  }
+
   .header {
     display: grid;
     grid-template-columns: auto, auto;
