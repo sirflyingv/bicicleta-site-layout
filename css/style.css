@@ -557,7 +557,7 @@ footer {
   color: #9c9c9c;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   body {
     overflow-x: visible;
   }
